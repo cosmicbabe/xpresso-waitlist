@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xpresso Waitlist</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Be the first to use Xpresso! ☕️ </h2>
+    <p><em>Kindly fill up the form below to join the waitlist and choose your username!</em></p>
+    <form id="waitlistForm" method="POST" action="https://formspree.io/f/xeogwyvj">
+      <div class="form-group">
+        <label for="email"><strong>Email:</strong></label>
+        <input type="email" id="email" name="email" placeholder="e.g. tami@xpresso.com" required>
+      </div>
+      <div class="form-group">
+        <label for="username"><strong>Username:</strong></label>
+        <input 
+        type="text" 
+        id="username" name="username"
+        pattern="[A-Za-z0-9_]{3,35}" 
+        placeholder="A-Z, a-z, 0-9, or _ between 3 to 30 characters " 
+        title="Must be between 3 to 30 characters in length, contain only letters, numbers, and underscores (_)" 
+        required>
+      </div>
+      <button type="submit" class="submit-btn" value="Submit">Submit</button>
+      <div class="message" id="message"></div>
+    </form>
+  </div>
+</body>
+</html>
